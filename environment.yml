@@ -1,0 +1,29 @@
+#
+# SPDX-FileCopyrightText: Copyright © 2023 Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Fabio Fehr <fabio.fehr@idiap.ch>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+#
+
+name: nvib
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.9 # Free BSD - https://www.python.org/
+  - pip # MIT - https://github.com/pypa/pip
+  - matplotlib # BSD - https://github.com/pypa/pip
+  - datasets # Apache 2.0 - https://pypi.org/project/datasets/
+  - wandb # MIT https://wandb.ai/site
+  - cudatoolkit=11.3 # MIT - https://docs.nvidia.com/cuda/eula/index.html
+  - numpy # BSD - https://numpy.org/
+  - pyarrow>=3.0.0 # Apache - https://arrow.apache.org/docs/python/index.html
+  - pytorch=1.10.0=py3.9_cuda11.3_cudnn8.2.0_0 # BSD3 - https://pytorch.org/
+  - transformers # apache2.0 - https://pypi.org/project/transformers/
+  - nltk # Apache2.0 - https://www.nltk.org/
+  - seaborn # BSD3 - https://seaborn.pydata.org/
+  - sacrebleu # Apache 2.0 - https://pypi.org/project/sacrebleu/
+  - pip:
+    - evaluate # apache 2.0 - https://github.com/huggingface
+    - ../nvib/. # GPLv3
